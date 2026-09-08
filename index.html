@@ -1,1 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BiteCraft</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+  <div class="loader">
+    <div>BITE<span>CRAFT</span></div>
+    <small>LOADING...</small>
+  </div>
+
+  <nav>
+    <div class="logo">BITE<span>CRAFT</span></div>
+
+    <div class="links">
+      <a href="#home">HOME</a>
+      <a href="#menu">MENU</a>
+      <a href="#about">ABOUT</a>
+    </div>
+
+    <button id="cartBtn">
+      🛒 CART <b id="count">0</b>
+    </button>
+  </nav>
+
+  <section class="hero" id="home">
+
+    <div class="heroText">
+      <p class="small">🔥 FRESH FROM THE GRILL</p>
+
+      <h1>
+        BIG<br>
+        <i>BOLD</i><br>
+        FLAVOR.
+      </h1>
+
+      <p class="description">
+        Handmade burgers, crispy fries and crazy good
+        flavors made fresh for you.
+      </p>
+
+      <a href="#menu" class="order">
+        ORDER NOW <span>↗</span>
+      </a>
+    </div>
+
+    <div class="burgerArea">
+
+      <div class="circle"></div>
+
+      <div class="burger">
+        <div class="bunTop">
+          <span>•</span>
+          <span>•</span>
+          <span>•</span>
+          <span>•</span>
+          <span>•</span>
+        </div>
+
+        <div class="lettuce"></div>
+        <div class="tomato"></div>
+        <div class="cheese"></div>
+        <div class="patty"></div>
+        <div class="cheese"></div>
+        <div class="lettuce"></div>
+        <div class="bunBottom"></div>
+      </div>
+
+      <div class="price">
+        <small>SIGNATURE</small>
+        <strong>₹249</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="marquee">
+    <div>
+      FRESH BURGERS ✦ CRISPY FRIES ✦ GOOD VIBES ✦
+      FRESH BURGERS ✦ CRISPY FRIES ✦ GOOD VIBES ✦
+    </div>
+  </div>
+
+  <section class="menu" id="menu">
+
+    <p class="small dark">01 / OUR MENU</p>
+
+    <h2>
+      PICK YOUR<br>
+      <i>CRAVING.</i>
+    </h2>
+
+    <div class="filters">
+      <button class="active" data-filter="all">ALL</button>
+      <button data-filter="burger">BURGERS</button>
+      <button data-filter="fries">FRIES</button>
+      <button data-filter="drink">DRINKS</button>
+    </div>
+
+    <div class="cards">
+
+      <div class="card" data-type="burger">
+        <div class="food">🍔</div>
+        <div class="info">
+          <div>
+            <h3>Classic Smash</h3>
+            <p>Beef · Cheese · Special Sauce</p>
+          </div>
+          <strong>₹249</strong>
+        </div>
+        <button class="add" data-name="Classic Smash" data-price="249">+</button>
+      </div>
+
+      <div class="card" data-type="burger">
+        <div class="food">🍔</div>
+        <div class="info">
+          <div>
+            <h3>Fire Chicken</h3>
+            <p>Crispy Chicken · Jalapeño</p>
+          </div>
+          <strong>₹229</strong>
+        </div>
+        <button class="add" data-name="Fire Chicken" data-price="229">+</button>
+      </div>
+
+      <div class="card" data-type="fries">
+        <div class="food">🍟</div>
+        <div class="info">
+          <div>
+            <h3>Loaded Fries</h3>
+            <p>Cheese · Herbs · Sauce</p>
+          </div>
+          <strong>₹149</strong>
+        </div>
+        <button class="add" data-name="Loaded Fries" data-price="149">+</button>
+      </div>
+
+      <div class="card" data-type="drink">
+        <div class="food">🥤</div>
+        <div class="info">
+          <div>
+            <h3>Berry Fizz</h3>
+            <p>Berry · Lime · Soda</p>
+          </div>
+          <strong>₹129</strong>
+        </div>
+        <button class="add" data-name="Berry Fizz" data-price="129">+</button>
+      </div>
+
+      <div class="card" data-type="burger">
+        <div class="food">🍔</div>
+        <div class="info">
+          <div>
+            <h3>Cheese Bomb</h3>
+            <p>Triple Cheese · Beef</p>
+          </div>
+          <strong>₹279</strong>
+        </div>
+        <button class="add" data-name="Cheese Bomb" data-price="279">+</button>
+      </div>
+
+      <div class="card" data-type="fries">
+        <div class="food">🍟</div>
+        <div class="info">
+          <div>
+            <h3>Peri Peri Fries</h3>
+            <p>Spicy · Crispy · Fresh</p>
+          </div>
+          <strong>₹119</strong>
+        </div>
+        <button class="add" data-name="Peri Peri Fries" data-price="119">+</button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="about" id="about">
+
+    <div class="aboutBurger">🍔</div>
+
+    <div>
+      <p class="small">02 / OUR STORY</p>
+
+      <h2>
+        FOOD SHOULD<br>
+        <i>FEEL ALIVE.</i>
+      </h2>
+
+      <p>
+        We don't believe in boring burgers.
+        We believe in fresh ingredients, crazy
+        combinations and unforgettable taste.
+      </p>
+
+      <button class="blackBtn">OUR STORY →</button>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="logo">BITE<span>CRAFT</span></div>
+    <p>© 2026 BITECRAFT — MADE FOR HUNGRY PEOPLE.</p>
+  </footer>
+
+  <div class="cart" id="cart">
+
+    <div class="cartBox">
+
+      <button class="close" id="close">×</button>
+
+      <p class="small dark">YOUR ORDER</p>
+
+      <h2>READY TO<br><i>EAT?</i></h2>
+
+      <div id="items"></div>
+
+      <div class="total">
+        <span>TOTAL</span>
+        <strong id="total">₹0</strong>
+      </div>
+
+      <button class="checkout">CHECKOUT →</button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
